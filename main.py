@@ -13,6 +13,8 @@ stylesheets = [
 
 app = Dash(__name__, external_stylesheets = stylesheets)
 
+server = app.server
+
 bubble_map = px.scatter_geo(countries_df, 
                      hover_name="Country_Region",
                      color="Confirmed", 
@@ -155,5 +157,3 @@ def update_hello(value):
     return fig
 
 
-if __name__ == '__main__':
-    app.run_server(debug=True)
