@@ -29,7 +29,7 @@ def make_table(df):
                             "gridTemplateColumns": "repeat(4, 1fr)",
                             "border-top": "1px solid white",
                             "padding": "30px 0px",
-                            "gap": 20,
+                            "gap": 40,
                             "fontSize": 14
                         },
                         children=[
